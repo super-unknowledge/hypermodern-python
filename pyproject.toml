@@ -1,3 +1,4 @@
+# pyproject.toml
 [project]
 name = "hypermodern-python"
 version = "0.1.0"
@@ -19,3 +20,20 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 hypermodern-python = "hypermodern_python.console:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+coverage = {extras = ["toml"], version = "^7.7.0"}
+pytest-cov = "^6.0.0"
+pytest-mock = "^3.14.0"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["hypermodern_python"]
+
+[tool.coverage.report]
+show_missing = true
+# fail_under = 100
