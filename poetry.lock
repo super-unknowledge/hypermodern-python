@@ -265,6 +265,18 @@ files = [
 ]
 
 [[package]]
+name = "insecure-package"
+version = "0.1.0"
+description = "Insecure Package, don't use it"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "insecure-package-0.1.0.tar.gz", hash = "sha256:4da7b05a052f19841c1efbd4cc8edea9a78aaaa295360923cb2b052b547b7877"},
+    {file = "insecure_package-0.1.0-py2.py3-none-any.whl", hash = "sha256:4d9485a53c970c892f887e10fd99e97b82848ac9010e79bc715585e1a6a74422"},
+]
+
+[[package]]
 name = "packaging"
 version = "24.2"
 description = "Core utilities for Python packages"
@@ -438,4 +450,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9"
-content-hash = "0788455c91ce373379d644baab4cf92afca7998d96d51827d2e9b54a2192378a"
+content-hash = "beee8801bdeb2cbd9bfd169a98f94dacead3191ba4c0d81859ae086f2ad3e228"
